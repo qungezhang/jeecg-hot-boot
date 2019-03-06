@@ -30,15 +30,15 @@ public class JeecgCodeGenerator {
     	/**[2]、表配置参数 */
 		TableVo table = new TableVo();
 		//表名
-		table.setTableName("jeecg_order_main");
+		table.setTableName("qunge_test_user");
 		//表主键策略（目前只支持UUID）
 		table.setPrimaryKeyPolicy("uuid");
 		//子业务包名
-		table.setEntityPackage("test2");
+		table.setEntityPackage("qungetest");
 		//实体类名
-		table.setEntityName("JeecgOrderMain");
+		table.setEntityName("QungeTestUser");
 		//功能描述
-		table.setFtlDescription("订单");
+		table.setFtlDescription("QUNGE测试");
 		new CodeGenerateOne(table).generateCodeFile();
 		System.out.println("----jeecg--------- Code------------- Generation -----[单表模型]------- 生成完成。。。");
 	}

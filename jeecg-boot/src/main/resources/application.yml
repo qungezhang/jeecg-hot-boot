@@ -65,7 +65,7 @@ spring:
           master: 
             url: jdbc:mysql://127.0.0.1:3306/jeecg-boot?characterEncoding=UTF-8&useUnicode=true&useSSL=false
             username: root
-            password: root
+            password: 123456
             driver-class-name: com.mysql.jdbc.Driver
           # 多数据源配置   
           #multi-datasource1: 
@@ -76,8 +76,8 @@ spring:
   #redis 配置
   redis:
      database: 0
-     #host: 127.0.0.1
-     host: 192.168.1.199
+     host: 127.0.0.1
+#     host: 192.168.1.199
      lettuce:
        pool:
          max-active: 8   #最大连接数据库连接数,设 0 为没有限制
